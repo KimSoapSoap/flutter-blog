@@ -19,8 +19,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      navigatorKey: navigatorKey, // context가 없는 곳에서 context를 사용할 수 있는 방법
+      navigatorKey: navigatorKey,
+      // context가 없는 곳에서 context를 사용할 수 있는 방법
       debugShowCheckedModeBanner: false,
+      //splashPage였는데 로그인 테스트한다고 로그인테스트로 바꿈
       home: SplashPage(),
       routes: {
         "/login": (context) => const LoginPage(),
